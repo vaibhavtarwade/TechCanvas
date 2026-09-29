@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — TechCanvas</title>
+  
+  <!-- SEO Metadata -->
+  <meta name="description" content="Learn more about TechCanvas, a student-created blog documenting technology, programming, and college engineering experiences.">
+  <meta name="author" content="Vaibhav">
+  <meta property="og:title" content="About — TechCanvas">
+  <meta property="og:description" content="About the blog author and the college activity project.">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="about.html">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="TechCanvas Home">
+        <span class="brand-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="16 18 22 12 16 6"></polyline>
+            <polyline points="8 6 2 12 8 18"></polyline>
+          </svg>
+        </span>
+        <span>TechCanvas</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav-desktop" aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="categories.html" class="nav-link">Categories</a></li>
+          <li><a href="about.html" class="nav-link active">About</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <a href="blog.html" class="icon-btn" title="Search Articles" aria-label="Search">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </a>
+        <button class="icon-btn theme-toggle-btn" aria-label="Toggle Dark Mode" title="Toggle Theme">
+          <span class="theme-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </span>
+        </button>
+        <button class="menu-toggle" aria-label="Toggle Menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Navigation -->
+    <div class="nav-mobile" aria-label="Mobile Navigation">
+      <ul class="nav-mobile-links">
+        <li><a href="index.html" class="nav-mobile-link">Home</a></li>
+        <li><a href="blog.html" class="nav-mobile-link">Blog</a></li>
+        <li><a href="categories.html" class="nav-mobile-link">Categories</a></li>
+        <li><a href="about.html" class="nav-mobile-link active">About</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h1 class="page-header-title">About TechCanvas</h1>
+        <p class="page-header-desc">The story behind this student blog, what I'm learning, and why documenting the process matters.</p>
+      </div>
+    </section>
+
+    <!-- Main Content Grid -->
+    <section class="section-padding-sm" style="padding-bottom: 5rem;">
+      <div class="container about-grid">
+        <div class="about-text">
+          <span class="tag-badge">The Mission</span>
+          <h2>About the Blog</h2>
+          <p>TechCanvas is a student-created blog built as part of a college class activity. It is a place to document what I’m learning, explore technology topics, and share ideas that I find interesting throughout my engineering studies.</p>
+          
+          <p>In computer science and engineering coursework, we frequently learn complex theoretical models, write code for lab assignments, and tackle semester projects. However, having a dedicated space to synthesize those concepts into clear, written reflections deepens understanding far more than just passing an exam.</p>
+
+          <h2>Why "TechCanvas"?</h2>
+          <p>The name <strong>TechCanvas</strong> reflects the philosophy that technology is an expansive canvas for creative problem-solving. Whether it's writing clean JavaScript, configuring distributed cloud tools, or understanding how machine learning algorithms work under the hood, every project starts as a blank slate waiting for thoughtful architecture.</p>
+
+          <h2>Core Principles of This Blog</h2>
+          <ul>
+            <li><strong>Clarity Over Jargon:</strong> Explaining technical concepts in plain, direct language without hiding behind buzzwords.</li>
+            <li><strong>Honest Learning Logs:</strong> Sharing the bugs, architecture missteps, and scope adjustments alongside the successes.</li>
+            <li><strong>Human &amp; Accessible Design:</strong> Prioritizing comfortable typography, high contrast, and responsive layouts for real readers.</li>
+          </ul>
+
+          <h2>Tools &amp; Tech Stack</h2>
+          <p>This website itself is built entirely with semantic <strong>HTML5</strong>, modern <strong>CSS3</strong> (custom properties, Flexbox, and CSS Grid), and <strong>Vanilla JavaScript</strong>. It is designed to be completely lightweight, fast-loading, and effortlessly deployable onto <strong>GitHub Pages</strong> without requiring heavy build steps or server runtimes.</p>
+        </div>
+
+        <!-- Sidebar / Author Profile Card -->
+        <aside>
+          <div class="about-sidebar-card">
+            <div class="author-profile-large">
+              <img src="images/author/vaibhav.jpg" alt="Vaibhav - Student &amp; Author" width="120" height="120">
+            </div>
+            <h3>Vaibhav</h3>
+            <div style="font-size: 0.9rem; color: var(--accent-primary); font-weight: 500; margin-bottom: 1rem;">
+              Engineering Student &amp; Technology Enthusiast
+            </div>
+            <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.25rem;">
+              "I'm a student exploring programming, web development and emerging technologies. This blog is part of my journey of learning by building and sharing."
+            </p>
+
+            <div class="author-social-list">
+              <a href="https://github.com/" target="_blank" rel="noopener" class="social-pill-link" title="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                GitHub
+              </a>
+              <a href="https://linkedin.com/" target="_blank" rel="noopener" class="social-pill-link" title="LinkedIn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                LinkedIn
+              </a>
+              <a href="https://instagram.com/" target="_blank" rel="noopener" class="social-pill-link" title="Instagram">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                Instagram
+              </a>
+            </div>
+
+            <div class="activity-badge-box">
+              <h5>Class Activity Showcase</h5>
+              <p>Created for college presentation and practical demonstration of modern responsive web fundamentals.</p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+      <div class="container">
+        <div class="newsletter-box">
+          <h3>Stay in the loop</h3>
+          <p>Get occasional updates when I publish something new. No spam, ever.</p>
+          <form class="newsletter-form" action="#" method="POST">
+            <input type="email" class="newsletter-input" placeholder="Your email address" required aria-label="Email Address">
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+          <div class="newsletter-feedback"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h4>TechCanvas</h4>
+          <p class="footer-tagline">Ideas, Technology &amp; Everything I’m Learning.</p>
+        </div>
+        <div class="footer-column">
+          <h5>Navigation</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h5>Topics</h5>
+          <ul class="footer-links">
+            <li><a href="blog.html?category=Technology">Technology</a></li>
+            <li><a href="blog.html?category=Programming">Programming</a></li>
+            <li><a href="blog.html?category=Web%20Development">Web Development</a></li>
+            <li><a href="blog.html?category=Cybersecurity">Cybersecurity</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h5>Connect</h5>
+          <ul class="footer-links">
+            <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 TechCanvas. Created as a college class activity.</div>
+        <div>Built with semantic HTML, CSS &amp; vanilla JavaScript.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top-btn" aria-label="Scroll to top" title="Back to top">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Scripts -->
+  <script src="js/script.js"></script>
+</body>
+</html>

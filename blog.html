@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Articles — TechCanvas</title>
+  
+  <!-- SEO Metadata -->
+  <meta name="description" content="Browse all articles, tutorials, and reflections across programming, web development, AI, and college engineering life.">
+  <meta name="author" content="Vaibhav">
+  <meta property="og:title" content="All Articles — TechCanvas">
+  <meta property="og:description" content="Notes, experiments and ideas from my journey through technology.">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="blog.html">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="TechCanvas Home">
+        <span class="brand-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="16 18 22 12 16 6"></polyline>
+            <polyline points="8 6 2 12 8 18"></polyline>
+          </svg>
+        </span>
+        <span>TechCanvas</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav-desktop" aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="blog.html" class="nav-link active">Blog</a></li>
+          <li><a href="categories.html" class="nav-link">Categories</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <button class="icon-btn theme-toggle-btn" aria-label="Toggle Dark Mode" title="Toggle Theme">
+          <span class="theme-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </span>
+        </button>
+        <button class="menu-toggle" aria-label="Toggle Menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Navigation -->
+    <div class="nav-mobile" aria-label="Mobile Navigation">
+      <ul class="nav-mobile-links">
+        <li><a href="index.html" class="nav-mobile-link">Home</a></li>
+        <li><a href="blog.html" class="nav-mobile-link active">Blog</a></li>
+        <li><a href="categories.html" class="nav-mobile-link">Categories</a></li>
+        <li><a href="about.html" class="nav-mobile-link">About</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h1 class="page-header-title">All Articles</h1>
+        <p class="page-header-desc">Notes, experiments and ideas from my journey through technology and engineering.</p>
+      </div>
+    </section>
+
+    <!-- Search & Filter Controls -->
+    <section class="container search-filter-wrapper">
+      <div class="search-bar-box">
+        <span class="search-icon-inside">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </span>
+        <input type="text" id="blog-search-input" class="search-input" placeholder="Search articles by title, topic, or keyword..." aria-label="Search articles">
+      </div>
+
+      <!-- Category Filter Pills -->
+      <div class="category-filter-bar">
+        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn" data-category="technology">Technology</button>
+        <button class="filter-btn" data-category="programming">Programming</button>
+        <button class="filter-btn" data-category="web development">Web Development</button>
+        <button class="filter-btn" data-category="artificial intelligence">AI</button>
+        <button class="filter-btn" data-category="college life">College</button>
+        <button class="filter-btn" data-category="projects">Projects</button>
+        <button class="filter-btn" data-category="cybersecurity">Cybersecurity</button>
+      </div>
+    </section>
+
+    <!-- Articles Grid Section -->
+    <section class="section-padding-sm" style="padding-bottom: 5rem;">
+      <div class="container">
+        <div class="articles-grid" id="blog-posts-grid">
+          <!-- Populated dynamically by script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+      <div class="container">
+        <div class="newsletter-box">
+          <h3>Stay in the loop</h3>
+          <p>Get occasional updates when I publish something new. No spam, ever.</p>
+          <form class="newsletter-form" action="#" method="POST">
+            <input type="email" class="newsletter-input" placeholder="Your email address" required aria-label="Email Address">
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+          <div class="newsletter-feedback"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h4>TechCanvas</h4>
+          <p class="footer-tagline">Ideas, Technology &amp; Everything I’m Learning.</p>
+        </div>
+        <div class="footer-column">
+          <h5>Navigation</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h5>Topics</h5>
+          <ul class="footer-links">
+            <li><a href="blog.html?category=Technology">Technology</a></li>
+            <li><a href="blog.html?category=Programming">Programming</a></li>
+            <li><a href="blog.html?category=Web%20Development">Web Development</a></li>
+            <li><a href="blog.html?category=Cybersecurity">Cybersecurity</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h5>Connect</h5>
+          <ul class="footer-links">
+            <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 TechCanvas. Created as a college class activity.</div>
+        <div>Built with semantic HTML, CSS &amp; vanilla JavaScript.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top-btn" aria-label="Scroll to top" title="Back to top">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Scripts -->
+  <script src="js/script.js"></script>
+</body>
+</html>

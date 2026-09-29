@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechCanvas — Ideas, Technology &amp; Everything I’m Learning</title>
+  
+  <!-- SEO Metadata -->
+  <meta name="description" content="A student technology blog exploring programming, web development, emerging AI, and reflections from college engineering life.">
+  <meta name="author" content="Vaibhav">
+  <meta property="og:title" content="TechCanvas — Ideas, Technology &amp; Everything I’m Learning">
+  <meta property="og:description" content="Personal student blog documenting ideas, engineering projects, and lessons learned.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://example.com/techcanvas/">
+  <link rel="canonical" href="index.html">
+
+  <!-- Google Fonts: Playfair Display (Headings) & Inter (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="TechCanvas Home">
+        <span class="brand-icon">
+          <!-- Minimal code brackets / spark icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="16 18 22 12 16 6"></polyline>
+            <polyline points="8 6 2 12 8 18"></polyline>
+          </svg>
+        </span>
+        <span>TechCanvas</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav-desktop" aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="categories.html" class="nav-link">Categories</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Actions (Search & Dark Mode) -->
+      <div class="header-actions">
+        <a href="blog.html" class="icon-btn" title="Search Articles" aria-label="Search">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </a>
+        <button class="icon-btn theme-toggle-btn" aria-label="Toggle Dark Mode" title="Toggle Theme">
+          <span class="theme-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </span>
+        </button>
+        <button class="menu-toggle" aria-label="Toggle Menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Navigation -->
+    <div class="nav-mobile" aria-label="Mobile Navigation">
+      <ul class="nav-mobile-links">
+        <li><a href="index.html" class="nav-mobile-link active">Home</a></li>
+        <li><a href="blog.html" class="nav-mobile-link">Blog</a></li>
+        <li><a href="categories.html" class="nav-mobile-link">Categories</a></li>
+        <li><a href="about.html" class="nav-mobile-link">About</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="hero-tag">Student Journal &bull; TechCanvas</span>
+          <h1 class="hero-title">Thoughts, ideas and things I’m learning.</h1>
+          <p class="hero-subtitle">A student blog about technology, programming, college life and the ideas shaping the digital world.</p>
+          <div class="hero-buttons">
+            <a href="blog.html" class="btn btn-primary">Explore Articles</a>
+            <a href="about.html" class="btn btn-outline">About Me</a>
+          </div>
+        </div>
+        <div class="hero-image-wrapper">
+          <div class="hero-image-frame">
+            <img src="images/hero/hero-desk.jpg" alt="Developer desk workspace with laptop and notebook" width="600" height="450">
+          </div>
+          <div class="hero-caption">Documenting the journey one project at a time.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Article Section -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Featured Article</h2>
+          <a href="blog.html" class="section-link">All Articles &rarr;</a>
+        </div>
+        <div id="featured-post-container">
+          <!-- Injected dynamically via JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Latest Articles Section -->
+    <section class="section-padding" style="background-color: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Latest Articles</h2>
+          <a href="blog.html" class="section-link">Browse Archive &rarr;</a>
+        </div>
+        <div class="articles-grid" id="latest-posts-grid">
+          <!-- Injected dynamically via JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories Highlight Section -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Explore Topics</h2>
+          <a href="categories.html" class="section-link">View All Topics &rarr;</a>
+        </div>
+        <div class="categories-grid">
+          <a href="blog.html?category=Programming" class="category-card">
+            <div>
+              <div class="category-card-top">
+                <div class="category-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                  </svg>
+                </div>
+              </div>
+              <h3 class="category-name">Programming</h3>
+              <p class="category-desc">Notes, lessons and experiences from learning to code.</p>
+            </div>
+          </a>
+
+          <a href="blog.html?category=Web%20Development" class="category-card">
+            <div>
+              <div class="category-card-top">
+                <div class="category-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                  </svg>
+                </div>
+              </div>
+              <h3 class="category-name">Web Development</h3>
+              <p class="category-desc">Building accessible, modern, and responsive web applications.</p>
+            </div>
+          </a>
+
+          <a href="blog.html?category=Artificial%20Intelligence" class="category-card">
+            <div>
+              <div class="category-card-top">
+                <div class="category-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="3"></circle>
+                    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                  </svg>
+                </div>
+              </div>
+              <h3 class="category-name">Artificial Intelligence</h3>
+              <p class="category-desc">Exploring machine learning concepts without the marketing hype.</p>
+            </div>
+          </a>
+
+          <a href="blog.html?category=College%20Life" class="category-card">
+            <div>
+              <div class="category-card-top">
+                <div class="category-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                    <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path>
+                  </svg>
+                </div>
+              </div>
+              <h3 class="category-name">College Life</h3>
+              <p class="category-desc">Reflections and candid lessons from my engineering coursework.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+      <div class="container">
+        <div class="newsletter-box">
+          <h3>Stay in the loop</h3>
+          <p>Get occasional updates when I publish something new. No spam, ever.</p>
+          <form class="newsletter-form" action="#" method="POST">
+            <input type="email" class="newsletter-input" placeholder="Your email address" required aria-label="Email Address">
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+          <div class="newsletter-feedback"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h4>TechCanvas</h4>
+          <p class="footer-tagline">Ideas, Technology &amp; Everything I’m Learning.</p>
+        </div>
+        <div class="footer-column">
+          <h5>Navigation</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h5>Topics</h5>
+          <ul class="footer-links">
+            <li><a href="blog.html?category=Technology">Technology</a></li>
+            <li><a href="blog.html?category=Programming">Programming</a></li>
+            <li><a href="blog.html?category=Web%20Development">Web Development</a></li>
+            <li><a href="blog.html?category=Cybersecurity">Cybersecurity</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h5>Connect</h5>
+          <ul class="footer-links">
+            <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 TechCanvas. Created as a college class activity.</div>
+        <div>Built with semantic HTML, CSS &amp; vanilla JavaScript.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button class="back-to-top-btn" aria-label="Scroll to top" title="Back to top">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Scripts -->
+  <script src="js/script.js"></script>
+</body>
+</html>
